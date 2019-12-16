@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="10dp"
+android:paddingRight="10dp">
+<Button
+    android:id="@+id/btnTakePicture"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Take a Photo"
+    android:textStyle="bold"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/capturedImage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btnTakePicture"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:id="@+id/latTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude   :NA" />
+
+    <TextView
+        android:id="@+id/lonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/latTextView"
+        android:text="Longitude:NA" />
+
+    <Button
+        android:id="@+id/btnSendData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btnTakePicture"
+        android:text="Send" />
+
+    <Button
+        android:id="@+id/btnToStatsAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btnTakePicture"
+        android:text="Stats" />
+
+    <TextView
+        android:id="@+id/macTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lonTextView"
+        android:text="MAC: NA" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/macTextView"
+        android:text="Time: NA" />
+
+</RelativeLayout>
